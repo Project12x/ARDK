@@ -1,0 +1,95 @@
+{
+    "nes": {
+        "name": "Nintendo Entertainment System",
+        "resolution": {
+            "width": 256,
+            "height": 240
+        },
+        "tiles": {
+            "size": 8,
+            "max_per_bank": 256,
+            "format": "2bpp"
+        },
+        "palettes": {
+            "count": 4,
+            "colors_per_palette": 4,
+            "transparent_index": 0
+        },
+        "constraints": {
+            "sprites_per_scanline": 8,
+            "max_sprites": 64
+        },
+        "ai_prompt": "NES 8-bit pixel art style, strict 4-color palette (Black, White, plus two colors), 256x240 resolution, clean lines, no anti-aliasing, grid-aligned elements preferred"
+    },
+    "gb": {
+        "name": "Nintendo Game Boy",
+        "resolution": {
+            "width": 160,
+            "height": 144
+        },
+        "tiles": {
+            "size": 8,
+            "max_per_bank": 256,
+            "format": "2bpp"
+        },
+        "palettes": {
+            "count": 1,
+            "colors_per_palette": 4,
+            "palette": [
+                "#0f380f",
+                "#306230",
+                "#8bac0f",
+                "#9bbc0f"
+            ]
+        },
+        "constraints": {
+            "sprites_per_scanline": 10,
+            "max_sprites": 40
+        },
+        "ai_prompt": "Game Boy original dot-matrix style, 4 shades of olive green (#9bbc0f to #0f380f), 160x144 resolution, distinct lighting, high contrast, 2-bit pixel art"
+    },
+    "genesis": {
+        "name": "Sega Genesis",
+        "resolution": {
+            "width": 320,
+            "height": 224
+        },
+        "tiles": {
+            "size": 8,
+            "max_per_bank": 2048,
+            "format": "4bpp"
+        },
+        "palettes": {
+            "count": 4,
+            "colors_per_palette": 16,
+            "transparent_index": 0
+        },
+        "constraints": {
+            "sprites_per_scanline": 20,
+            "max_sprites": 80
+        },
+        "ai_prompt": "Sega Genesis 16-bit pixel art, dark industrial aesthetic, dithering effects, vibrant 16-color palettes, 320x224 resolution"
+    },
+    "snes": {
+        "name": "Super Nintendo",
+        "resolution": {
+            "width": 256,
+            "height": 224
+        },
+        "tiles": {
+            "size": 8,
+            "max_per_bank": 1024,
+            "format": "4bpp"
+        },
+        "palettes": {
+            "count": 8,
+            "colors_per_palette": 16,
+            "transparent_index": 0
+        },
+        "constraints": {
+            "sprites_per_scanline": 32,
+            "max_sprites": 128
+        },
+        "ai_prompt": "SNES 16-bit pixel art, rich color depth, clean sprites without dithering, 256x224 resolution, Mode 1 graphics"
+    }
+}
