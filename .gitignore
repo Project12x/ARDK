@@ -2,6 +2,14 @@
 # ARDK-Genesis .gitignore
 # =============================================================================
 
+# =====================
+# EXCLUDE LARGE FOLDERS
+# =====================
+_deprecated/
+artifacts/
+.pixellab_cache/
+.claude/
+
 # Build outputs
 projects/*/out/
 *.bin
@@ -47,12 +55,7 @@ tmpclaude-*
 
 # Cache
 .cache/
-.pixellab_cache/
 *.cache
-
-# Large assets (handle separately)
-# *.wav
-# *.mp3
 
 # Logs
 *.log
