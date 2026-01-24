@@ -1,0 +1,61 @@
+# =============================================================================
+# ARDK-Genesis .gitignore
+# =============================================================================
+
+# Build outputs
+projects/*/out/
+*.bin
+*.o
+*.elf
+*.sym
+*.lst
+
+# SGDK generated
+*.rs
+symbol.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+!.env.example
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+nul
+
+# Temp files
+*.tmp
+*.temp
+tmp*/
+tmpclaude-*
+
+# Cache
+.cache/
+.pixellab_cache/
+*.cache
+
+# Large assets (handle separately)
+# *.wav
+# *.mp3
+
+# Logs
+*.log
+
+# Windows artifacts
+tools/nul

@@ -1,0 +1,10 @@
+{
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle"
+    }
+  ]
+}

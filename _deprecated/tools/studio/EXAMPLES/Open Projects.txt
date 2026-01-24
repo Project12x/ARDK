@@ -1,0 +1,207 @@
+Eric's Open Projects List
+Project 1: Repair 3D Printer (Ender 3 Pro)
+Project Status: Stopped ~3 years ago. A new, working replacement mainboard is on-hand. Original failure point was difficulty flashing Marlin firmware to support an ABL (Auto Bed Leveling) device.
+
+Task Breakdown (Refined):
+
+Re-familiarize with the project state.
+
+Physically install the new replacement mainboard.
+
+Compile, flash, troubleshoot, and debug the Marlin firmware (specifically for ABL support).
+
+Test all hardware (axes, heaters, extruder).
+
+Calibrate ABL and run test prints.
+
+Estimates:
+
+Total Time: 8 - 11 hours (2-3 for hardware, 6-8 for software/troubleshooting).
+
+Duration: 1 - 2 active days.
+
+Intrusiveness: Level 1 (Rationale: It has its own station and is not blocking other work.)
+
+Project 2: Rebuild Kustom brand amp
+Project Status: Disassembled after a major flood. Case is fully repaired and refinished. Electronics are ~35 years old (solid state) and may need recapping. Currently in pieces in the living room.
+
+Task Breakdown (Phase 1: Best-Case Reassembly):
+
+Clean, dry, and grease all corroded hardware (using ultrasonic cleaner for the first time).
+
+Clean and test original reverb tank.
+
+Purchase new reverb bag (if tank works) or replacement tank (if it fails).
+
+Reassemble all components into the refinished cabinet.
+
+Full function test.
+
+Task Breakdown (Phase 2: Contingency Plan):
+
+If amp fails test or for future reliability: full recap (diagnose, source, and replace all electrolytic capacitors).
+
+Estimates (Phase 1):
+
+Total Time: ~6-8 hours (4-6 hours for cleaning hardware + 2 hours for reassembly).
+
+Duration: ~2 active days.
+
+Intrusiveness: Level 4 (Rationale: High priority. Parts are in the living room, impeding shared space.)
+
+Estimates (Phase 2 - Contingency):
+
+Total Time: 10-15+ hours (Beginner soldering, research, careful board removal).
+
+Duration: 3-5 active days.
+
+Project 3: Fix 1977 Fender Stratocaster
+Project Status: Disassembled. Needs rewiring (new switch, fix pickup wiring, proper ground). Frets polished. Aftermarket saddles align poorly.
+
+Parts on Hand: Replacement Callaham stainless steel saddles.
+
+Task Breakdown (Phase 1: Main Repair & Assembly):
+
+Source new main switch.
+
+Rewire pickguard (new switch, pickups, ground).
+
+Install new Callaham saddles.
+
+Reassemble entire guitar.
+
+String, adjust, and intonate.
+
+Task Breakdown (Phase 2: Contingency Plan):
+
+If nut is bad, replace it (new skill).
+
+Estimates (Phase 1):
+
+Total Time: 6 - 7 hours.
+
+Duration: 1 active day.
+
+Estimates (Phase 2 - Contingency):
+
+Total Time: 1 - 2 additional hours.
+
+Intrusiveness: Level 4 (Rationale: Pickguard and parts have been on the workbench for over two months.)
+
+Project 4: Upgrade main computer
+Project Status: Components (new CPU, NVME, SSD) are on-hand for ~2 years. Proficient, but hesitant about CPU swap.
+
+Task Breakdown:
+
+Cloning (Passive): Clone existing NVME drive. Clone SSD (if SATA budget is insufficient).
+
+Hardware Install (Active):
+
+Perform full case cleaning.
+
+Replace CPU (requires new thermal paste).
+
+Install new/cloned NVME.
+
+Swap HDDs between external/internal.
+
+Install/replace SSD.
+
+Testing: Boot and confirm all new hardware.
+
+Estimates:
+
+Total Time: ~7-9+ hours (Active: ~3 hours / Passive: ~4-6+ hours for cloning).
+
+Duration: 1-2 active days.
+
+Intrusiveness: Level 2 (Rationale: Parts are not physically in the way, but the lack of storage is a workflow impediment.)
+
+Project 5: Refinish/fix bookshelf
+Project Status: Flood-damaged. 95% sanded. Stuck on final 5% of sanding. Structural/mold work is done.
+
+Task Breakdown:
+
+Complete final 5% of sanding (difficult corners).
+
+Apply pre-stain conditioner.
+
+Apply stain.
+
+Apply multiple coats of oil-based polyurethane (requires ~3-day dry times between coats).
+
+Allow for final, full cure.
+
+Estimates:
+
+Total Active Time: ~10-11 hours (4-5 for sanding + 6 for coating).
+
+Total Calendar Duration: ~6 weeks (due to long drying/curing times).
+
+Intrusiveness: Level 5 (Highest Priority)
+
+Rationale: Project is in a shared shed needed for a partner's art show in late December. It is a "particular point of contention" and a source of relationship stress.
+
+Project 6: Fix/clean/sanitize dresser
+Project Status: A "twice second hand" piece that has sat empty for 2 years as it requires deep cleaning and sanitization before use.
+
+Primary Goal: Clean/sanitize the dresser (especially unfinished interiors) so it can be used, clearing clothes from around the house. A full refinish is a future project.
+
+Task Breakdown:
+
+Clean/vacuum all interior/exterior surfaces.
+
+Sanitize unfinished interiors with a 10% bleach solution.
+
+Allow to dry completely (1-2 days).
+
+Lightly sand unfinished interiors to smooth any raised grain.
+
+Final vacuum/wipe-down.
+
+Estimates:
+
+Total Active Time: 6 - 8 hours.
+
+Total Calendar Duration: 2 - 3 active days (to allow for drying).
+
+Intrusiveness: Level 5 (Highest Priority)
+
+Rationale (Physical): The consequence (piled-up clothes) is a major physical impediment.
+
+Rationale (Relational): A major "point of contention" with your partner.
+
+Project 7: Set up second "server" PC
+Project Status: The PC is functional and physically in place, but not connected.
+
+Primary Goal: Set up the PC as a media center.
+
+Blocker (The Real Project): The area behind the heavy TV console is contaminated with old mouse droppings from a past infestation. This must be cleaned before you are comfortable running wires.
+
+Task Breakdown:
+
+Empty the TV console completely (TV, all other items).
+
+Move the heavy console away from the wall.
+
+Thoroughly clean the area (vacuum droppings, sanitize).
+
+Wet-vac the area rug that sits under the console.
+
+Allow the rug to dry outside for ~2 days (weather dependent).
+
+Upgrade the nearby electrical outlet to ensure a proper ground.
+
+Move the console and all items back into place.
+
+Finally, plug in the PC and run the wires through the clean area.
+
+Estimates:
+
+Total Active Time: ~8 hours.
+
+Total Calendar Duration: ~3 active days (to allow for rug drying).
+
+Intrusiveness: Level 2
+
+Rationale: The PC itself is not physically in the way, but its state of disuse (becoming obsolete, wasting resources) is a source of frustration.

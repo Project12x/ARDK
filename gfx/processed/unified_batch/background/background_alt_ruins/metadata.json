@@ -1,0 +1,29 @@
+{
+  "source": "gfx/ai_output/background_alt_ruins.png",
+  "timestamp": "2026-01-10T12:39:36.956572",
+  "target_size": 128,
+  "sprites_detected": 1,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "background",
+      "action": "frame",
+      "frame": 1,
+      "description": "background frame 1",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 972
+      },
+      "palette": [
+        15,
+        44,
+        44,
+        36
+      ],
+      "chr_file": "sprite_01_background_frame_1.chr",
+      "chr_size": 4096
+    }
+  ]
+}

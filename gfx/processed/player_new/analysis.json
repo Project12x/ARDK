@@ -1,0 +1,100 @@
+{
+  "image_size": [
+    1024,
+    1024
+  ],
+  "sprites": [
+    {
+      "id": 1,
+      "bbox": [
+        29,
+        26,
+        24,
+        32
+      ],
+      "type": "player",
+      "description": "player character idle animation",
+      "action": "idle",
+      "frame_size": [
+        24,
+        32
+      ],
+      "frame_count": 6,
+      "frame_direction": "horizontal",
+      "colors": [
+        "#FF00FF",
+        "#00FFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": 2,
+      "bbox": [
+        29,
+        120,
+        24,
+        32
+      ],
+      "type": "player",
+      "description": "player character run (side) animation",
+      "action": "run",
+      "frame_size": [
+        24,
+        32
+      ],
+      "frame_count": 4,
+      "frame_direction": "horizontal",
+      "colors": [
+        "#FF00FF",
+        "#00FFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": 3,
+      "bbox": [
+        26,
+        210,
+        24,
+        32
+      ],
+      "type": "player",
+      "description": "player character shoot animation",
+      "action": "attack",
+      "frame_size": [
+        24,
+        32
+      ],
+      "frame_count": 2,
+      "frame_direction": "horizontal",
+      "colors": [
+        "#FF00FF",
+        "#00FFFF",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "id": 4,
+      "bbox": [
+        52,
+        219,
+        8,
+        8
+      ],
+      "type": "projectile",
+      "description": "small bullet projectile from shooting animation",
+      "action": "shoot",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frame_count": 1,
+      "frame_direction": "horizontal",
+      "colors": [
+        "#FFFFFF"
+      ]
+    }
+  ],
+  "notes": "The sprite sheet features a single player character with distinct idle, run, and shoot animations. The character is consistently sized to fit a 24x32 pixel composite sprite, which is typical for NES characters composed of multiple 8x8 or 8x16 hardware sprites. The chosen color palette is vibrant, consisting of magenta, cyan, and white on a black background. All animation frames are arranged horizontally. A separate entry is provided for the small bullet projectile, treated as an 8x8 hardware sprite.",
+  "analysis_scale": 1.0
+}

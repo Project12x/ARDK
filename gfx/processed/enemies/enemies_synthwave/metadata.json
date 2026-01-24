@@ -1,0 +1,31 @@
+{
+  "source": "gfx/ai_output/enemies_synthwave.png",
+  "timestamp": "2026-01-10T19:12:07.410384",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 1,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "enemy",
+      "action": "idle",
+      "description": "skull_pink",
+      "frame": 1,
+      "bbox": {
+        "x": 0,
+        "y": 10,
+        "width": 1024,
+        "height": 1013
+      },
+      "chr_file": "sprite_01_skull_pink.chr",
+      "chr_size": 256
+    }
+  ]
+}

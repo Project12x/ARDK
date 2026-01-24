@@ -1,0 +1,391 @@
+{
+  "source": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\ai_output\\player_hero_combat.png",
+  "target_size": 32,
+  "global_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "frames": [
+    {
+      "frame": {
+        "id": 1,
+        "x": 20,
+        "y": 25,
+        "width": 225,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_01_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 2,
+        "x": 271,
+        "y": 25,
+        "width": 194,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_02_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 3,
+        "x": 501,
+        "y": 25,
+        "width": 236,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_03_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 4,
+        "x": 30,
+        "y": 112,
+        "width": 174,
+        "height": 338,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_04_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 5,
+        "x": 230,
+        "y": 92,
+        "width": 292,
+        "height": 358,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_05_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 6,
+        "x": 537,
+        "y": 178,
+        "width": 220,
+        "height": 272,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_06_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 7,
+        "x": 778,
+        "y": 178,
+        "width": 225,
+        "height": 272,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 3,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_07_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 8,
+        "x": 20,
+        "y": 527,
+        "width": 322,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_08_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 9,
+        "x": 389,
+        "y": 527,
+        "width": 194,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_09_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 10,
+        "x": 624,
+        "y": 527,
+        "width": 195,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_10_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 11,
+        "x": 41,
+        "y": 660,
+        "width": 194,
+        "height": 281,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_11_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 12,
+        "x": 256,
+        "y": 609,
+        "width": 246,
+        "height": 332,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_12_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 13,
+        "x": 547,
+        "y": 614,
+        "width": 201,
+        "height": 327,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_13_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 14,
+        "x": 763,
+        "y": 619,
+        "width": 235,
+        "height": 322,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 3,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\player\\player_hero_combat\\sprite_14_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    }
+  ],
+  "ai_analysis": null
+}

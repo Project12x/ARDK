@@ -1,0 +1,406 @@
+{
+  "source": "gfx/ai_output/enemies_alt_glitch.png",
+  "timestamp": "2026-01-10T19:12:03.448614",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 26,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_1",
+      "frame": 1,
+      "bbox": {
+        "x": 28,
+        "y": 25,
+        "width": 148,
+        "height": 31
+      },
+      "chr_file": "sprite_01_glitch_bug_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 2,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_2",
+      "frame": 2,
+      "bbox": {
+        "x": 193,
+        "y": 25,
+        "width": 109,
+        "height": 31
+      },
+      "chr_file": "sprite_02_glitch_bug_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 3,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_3",
+      "frame": 3,
+      "bbox": {
+        "x": 319,
+        "y": 25,
+        "width": 26,
+        "height": 31
+      },
+      "chr_file": "sprite_03_glitch_bug_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 4,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_4",
+      "frame": 4,
+      "bbox": {
+        "x": 362,
+        "y": 25,
+        "width": 109,
+        "height": 31
+      },
+      "chr_file": "sprite_04_glitch_bug_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 5,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_5",
+      "frame": 5,
+      "bbox": {
+        "x": 488,
+        "y": 25,
+        "width": 176,
+        "height": 31
+      },
+      "chr_file": "sprite_05_glitch_bug_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 6,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_6",
+      "frame": 6,
+      "bbox": {
+        "x": 681,
+        "y": 38,
+        "width": 17,
+        "height": 5
+      },
+      "chr_file": "sprite_06_glitch_bug_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 7,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_7",
+      "frame": 7,
+      "bbox": {
+        "x": 715,
+        "y": 25,
+        "width": 80,
+        "height": 31
+      },
+      "chr_file": "sprite_07_glitch_bug_7.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 8,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_8",
+      "frame": 8,
+      "bbox": {
+        "x": 813,
+        "y": 25,
+        "width": 180,
+        "height": 31
+      },
+      "chr_file": "sprite_08_glitch_bug_8.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 9,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_9",
+      "frame": 9,
+      "bbox": {
+        "x": 25,
+        "y": 88,
+        "width": 460,
+        "height": 434
+      },
+      "chr_file": "sprite_09_glitch_bug_9.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 10,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_bug_10",
+      "frame": 10,
+      "bbox": {
+        "x": 572,
+        "y": 117,
+        "width": 196,
+        "height": 405
+      },
+      "chr_file": "sprite_10_glitch_bug_10.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 11,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_1",
+      "frame": 11,
+      "bbox": {
+        "x": 797,
+        "y": 75,
+        "width": 197,
+        "height": 447
+      },
+      "chr_file": "sprite_11_neon_jelly_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 12,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_2",
+      "frame": 12,
+      "bbox": {
+        "x": 25,
+        "y": 548,
+        "width": 242,
+        "height": 25
+      },
+      "chr_file": "sprite_12_neon_jelly_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 13,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_3",
+      "frame": 13,
+      "bbox": {
+        "x": 281,
+        "y": 548,
+        "width": 76,
+        "height": 25
+      },
+      "chr_file": "sprite_13_neon_jelly_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 14,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_4",
+      "frame": 14,
+      "bbox": {
+        "x": 371,
+        "y": 548,
+        "width": 136,
+        "height": 25
+      },
+      "chr_file": "sprite_14_neon_jelly_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 15,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_5",
+      "frame": 15,
+      "bbox": {
+        "x": 30,
+        "y": 593,
+        "width": 83,
+        "height": 186
+      },
+      "chr_file": "sprite_15_neon_jelly_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 16,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_6",
+      "frame": 16,
+      "bbox": {
+        "x": 142,
+        "y": 593,
+        "width": 84,
+        "height": 186
+      },
+      "chr_file": "sprite_16_neon_jelly_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 17,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_7",
+      "frame": 17,
+      "bbox": {
+        "x": 265,
+        "y": 593,
+        "width": 78,
+        "height": 191
+      },
+      "chr_file": "sprite_17_neon_jelly_7.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 18,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_8",
+      "frame": 18,
+      "bbox": {
+        "x": 387,
+        "y": 593,
+        "width": 79,
+        "height": 191
+      },
+      "chr_file": "sprite_18_neon_jelly_8.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 19,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_9",
+      "frame": 19,
+      "bbox": {
+        "x": 583,
+        "y": 593,
+        "width": 170,
+        "height": 186
+      },
+      "chr_file": "sprite_19_neon_jelly_9.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 20,
+      "type": "enemy",
+      "action": "idle",
+      "description": "neon_jelly_10",
+      "frame": 20,
+      "bbox": {
+        "x": 807,
+        "y": 593,
+        "width": 177,
+        "height": 186
+      },
+      "chr_file": "sprite_20_neon_jelly_10.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 21,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_1",
+      "frame": 21,
+      "bbox": {
+        "x": 30,
+        "y": 808,
+        "width": 83,
+        "height": 186
+      },
+      "chr_file": "sprite_21_glitch_enemy_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 22,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_2",
+      "frame": 22,
+      "bbox": {
+        "x": 142,
+        "y": 808,
+        "width": 84,
+        "height": 187
+      },
+      "chr_file": "sprite_22_glitch_enemy_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 23,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_3",
+      "frame": 23,
+      "bbox": {
+        "x": 255,
+        "y": 808,
+        "width": 98,
+        "height": 186
+      },
+      "chr_file": "sprite_23_glitch_enemy_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 24,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_4",
+      "frame": 24,
+      "bbox": {
+        "x": 378,
+        "y": 808,
+        "width": 98,
+        "height": 187
+      },
+      "chr_file": "sprite_24_glitch_enemy_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 25,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_5",
+      "frame": 25,
+      "bbox": {
+        "x": 583,
+        "y": 807,
+        "width": 170,
+        "height": 188
+      },
+      "chr_file": "sprite_25_glitch_enemy_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 26,
+      "type": "enemy",
+      "action": "idle",
+      "description": "glitch_enemy_6",
+      "frame": 26,
+      "bbox": {
+        "x": 808,
+        "y": 808,
+        "width": 175,
+        "height": 190
+      },
+      "chr_file": "sprite_26_glitch_enemy_6.chr",
+      "chr_size": 256
+    }
+  ]
+}

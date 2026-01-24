@@ -1,0 +1,37 @@
+{
+    "name": "HAL Demo",
+    "id": "hal_demo",
+    "version": "1.0.0",
+    "author": "ARDK",
+    "description": "Demonstration of ARDK HAL capabilities: player, enemy, projectiles, background",
+
+    "platforms": {
+        "primary": "nes",
+        "additional": []
+    },
+
+    "build": {
+        "profile": "STANDARD",
+        "mapper": "mmc3",
+        "prg_banks": 2,
+        "chr_banks": 2
+    },
+
+    "assets": {
+        "sprite_size": "16x16",
+        "palette_mode": "auto"
+    },
+
+    "game": {
+        "max_enemies": 4,
+        "max_projectiles": 8,
+        "max_pickups": 4,
+        "max_effects": 4
+    },
+
+    "features": {
+        "parallax": false,
+        "chr_animation": false,
+        "audio": false
+    }
+}

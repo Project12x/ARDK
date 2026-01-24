@@ -1,0 +1,88 @@
+# ARDK Asset Pipeline Configuration
+# This file configures the retro game asset pipeline.
+# Place in project root - auto-discovered by pipeline tools.
+
+# Target platform: nes, genesis, snes, gameboy, sms, pce, amiga
+platform: nes
+
+# Project paths (relative to this file)
+paths:
+  sprites: gfx/sprites
+  backgrounds: gfx/backgrounds
+  generated: gfx/generated
+  processed: gfx/processed
+  output: src/game/assets
+  chr_output: src/game/assets
+  asm_output: src/game/assets
+  cache: .ardk_cache
+  temp: .ardk_temp
+
+# Named palettes (NES color indices)
+palettes:
+  player: [0x0F, 0x15, 0x21, 0x30]    # Black, Magenta, Cyan, White
+  enemies: [0x0F, 0x16, 0x27, 0x30]   # Black, Red, Orange, White
+  pickups: [0x0F, 0x29, 0x19, 0x30]   # Black, Green, Lime, White
+  background: [0x0F, 0x00, 0x10, 0x30] # Black, Gray, Light Gray, White
+
+# Safety limits (ENFORCED - cannot be bypassed)
+safeguards:
+  dry_run: true                  # Preview mode (set false to enable writes)
+  max_generations_per_run: 5     # Max AI generations per run
+  max_cost_per_run: 0.50         # Budget cap in USD
+  require_confirmation: true     # Prompt before destructive ops
+  validate_inputs: true          # Validate input files
+  validate_outputs: true         # Validate generated output
+
+# AI generation settings
+generation:
+  provider: pixellab             # pixellab, pollinations, openai
+  width: 32
+  height: 32
+  outline: medium                # none, thin, medium, thick
+  shading: soft                  # flat, soft, harsh
+  detail: medium                 # low, medium, high
+  view: side                     # front, side, top, isometric
+  generate_8_directions: false
+  use_mirror_optimization: true  # Generate 5 directions, mirror 3
+
+# Processing settings
+processing:
+  target_size: 32
+  colors_per_palette: 4          # NES sprite palette
+  filter_text: true              # Remove text artifacts
+  optimize_tiles: true           # Deduplicate tiles
+  max_tiles: 256
+  dither_method: floyd-steinberg # floyd-steinberg, ordered, atkinson, none
+  dither_strength: 1.0
+
+# Export settings
+export:
+  output_format: ca65            # sgdk, ca65, wla-dx, raw
+  generate_res_file: false
+  generate_headers: true
+  generate_metadata: true
+  save_debug_images: true        # Save intermediate images for debugging
+
+# Aseprite integration
+aseprite:
+  sheet_type: horizontal         # packed, horizontal, vertical, rows
+  scale: 1
+  trim: false
+  export_tags_separate: true
+  convert_to_sequences: true
+
+# Watch mode settings
+watch:
+  watch_dirs:
+    - gfx/sprites
+    - gfx/backgrounds
+  extensions:
+    - .png
+    - .aseprite
+    - .bmp
+  debounce: 1.0                  # Seconds to wait after file change
+  max_file_size_mb: 50.0         # Skip files larger than this
+  max_rate: 60                   # Max changes per minute
+  timeout: 30.0                  # Processing timeout per file
+  hot_reload_enabled: false
+  # hot_reload_command: "echo reload"

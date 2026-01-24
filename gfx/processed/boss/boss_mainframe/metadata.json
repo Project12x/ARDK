@@ -1,0 +1,46 @@
+{
+  "source": "gfx/ai_output/boss_mainframe.png",
+  "timestamp": "2026-01-10T19:11:58.386534",
+  "target_size": 64,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 2,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "enemy",
+      "action": "idle",
+      "description": "synthwave_mainframe_idle",
+      "frame": 1,
+      "bbox": {
+        "x": 122,
+        "y": 76,
+        "width": 780,
+        "height": 774
+      },
+      "chr_file": "sprite_01_synthwave_mainframe_idle.chr",
+      "chr_size": 1024
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle",
+      "frame": 2,
+      "bbox": {
+        "x": 112,
+        "y": 884,
+        "width": 804,
+        "height": 109
+      },
+      "chr_file": "sprite_02_synthwave_hero_idle.chr",
+      "chr_size": 1024
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#000000"/>
+  <circle cx="256" cy="256" r="180" stroke="#00FF41" stroke-width="8" fill="none"/>
+  <path d="M256 100 L256 412" stroke="#00FF41" stroke-width="6"/>
+  <path d="M100 256 L412 256" stroke="#00FF41" stroke-width="6"/>
+  <circle cx="256" cy="256" r="40" fill="#00FF41"/>
+  <text x="256" y="480" text-anchor="middle" font-family="monospace" font-size="48" font-weight="bold" fill="#00FF41">WOS</text>
+</svg>

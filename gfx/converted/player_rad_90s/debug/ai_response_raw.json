@@ -1,0 +1,22 @@
+{
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle"
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "run",
+      "description": "synthwave_hero_run_side"
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "shoot",
+      "description": "synthwave_hero_shoot"
+    }
+  ]
+}

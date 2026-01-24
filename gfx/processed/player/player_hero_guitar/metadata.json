@@ -1,0 +1,406 @@
+{
+  "source": "gfx/ai_output/player_hero_guitar.png",
+  "timestamp": "2026-01-10T19:12:40.647341",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 26,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_1",
+      "frame": 1,
+      "bbox": {
+        "x": 23,
+        "y": 32,
+        "width": 163,
+        "height": 27
+      },
+      "chr_file": "sprite_01_heroic_90s_rocker_running_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_2",
+      "frame": 2,
+      "bbox": {
+        "x": 215,
+        "y": 32,
+        "width": 78,
+        "height": 27
+      },
+      "chr_file": "sprite_02_heroic_90s_rocker_running_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_3",
+      "frame": 3,
+      "bbox": {
+        "x": 321,
+        "y": 32,
+        "width": 164,
+        "height": 27
+      },
+      "chr_file": "sprite_03_heroic_90s_rocker_running_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 4,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_4",
+      "frame": 4,
+      "bbox": {
+        "x": 514,
+        "y": 43,
+        "width": 18,
+        "height": 6
+      },
+      "chr_file": "sprite_04_heroic_90s_rocker_running_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 5,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_5",
+      "frame": 5,
+      "bbox": {
+        "x": 562,
+        "y": 32,
+        "width": 80,
+        "height": 27
+      },
+      "chr_file": "sprite_05_heroic_90s_rocker_running_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 6,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_6",
+      "frame": 6,
+      "bbox": {
+        "x": 670,
+        "y": 32,
+        "width": 163,
+        "height": 27
+      },
+      "chr_file": "sprite_06_heroic_90s_rocker_running_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 7,
+      "type": "player",
+      "action": "running",
+      "description": "heroic_90s_rocker_running_7",
+      "frame": 7,
+      "bbox": {
+        "x": 861,
+        "y": 32,
+        "width": 135,
+        "height": 27
+      },
+      "chr_file": "sprite_07_heroic_90s_rocker_running_7.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 8,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_1",
+      "frame": 8,
+      "bbox": {
+        "x": 10,
+        "y": 92,
+        "width": 240,
+        "height": 210
+      },
+      "chr_file": "sprite_08_heroic_90s_rocker_swinging_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 9,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_2",
+      "frame": 9,
+      "bbox": {
+        "x": 266,
+        "y": 133,
+        "width": 248,
+        "height": 169
+      },
+      "chr_file": "sprite_09_heroic_90s_rocker_swinging_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 10,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_3",
+      "frame": 10,
+      "bbox": {
+        "x": 530,
+        "y": 133,
+        "width": 233,
+        "height": 169
+      },
+      "chr_file": "sprite_10_heroic_90s_rocker_swinging_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 11,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_4",
+      "frame": 11,
+      "bbox": {
+        "x": 783,
+        "y": 133,
+        "width": 103,
+        "height": 169
+      },
+      "chr_file": "sprite_11_heroic_90s_rocker_swinging_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 12,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_5",
+      "frame": 12,
+      "bbox": {
+        "x": 909,
+        "y": 133,
+        "width": 105,
+        "height": 169
+      },
+      "chr_file": "sprite_12_heroic_90s_rocker_swinging_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 13,
+      "type": "player",
+      "action": "swinging",
+      "description": "heroic_90s_rocker_swinging_6",
+      "frame": 13,
+      "bbox": {
+        "x": 10,
+        "y": 343,
+        "width": 235,
+        "height": 220
+      },
+      "chr_file": "sprite_13_heroic_90s_rocker_swinging_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 14,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_1",
+      "frame": 14,
+      "bbox": {
+        "x": 271,
+        "y": 379,
+        "width": 102,
+        "height": 184
+      },
+      "chr_file": "sprite_14_heroic_90s_rocker_power_chord_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 15,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_2",
+      "frame": 15,
+      "bbox": {
+        "x": 388,
+        "y": 386,
+        "width": 113,
+        "height": 177
+      },
+      "chr_file": "sprite_15_heroic_90s_rocker_power_chord_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 16,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_3",
+      "frame": 16,
+      "bbox": {
+        "x": 516,
+        "y": 399,
+        "width": 113,
+        "height": 164
+      },
+      "chr_file": "sprite_16_heroic_90s_rocker_power_chord_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 17,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_4",
+      "frame": 17,
+      "bbox": {
+        "x": 649,
+        "y": 399,
+        "width": 115,
+        "height": 164
+      },
+      "chr_file": "sprite_17_heroic_90s_rocker_power_chord_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 18,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_5",
+      "frame": 18,
+      "bbox": {
+        "x": 783,
+        "y": 399,
+        "width": 231,
+        "height": 164
+      },
+      "chr_file": "sprite_18_heroic_90s_rocker_power_chord_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 19,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_6",
+      "frame": 19,
+      "bbox": {
+        "x": 10,
+        "y": 599,
+        "width": 619,
+        "height": 220
+      },
+      "chr_file": "sprite_19_heroic_90s_rocker_power_chord_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 20,
+      "type": "player",
+      "action": "power_chord",
+      "description": "heroic_90s_rocker_power_chord_7",
+      "frame": 20,
+      "bbox": {
+        "x": 650,
+        "y": 655,
+        "width": 112,
+        "height": 164
+      },
+      "chr_file": "sprite_20_heroic_90s_rocker_power_chord_7.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 21,
+      "type": "player",
+      "action": "idle",
+      "description": "heroic_90s_rocker_idle_1",
+      "frame": 21,
+      "bbox": {
+        "x": 778,
+        "y": 655,
+        "width": 113,
+        "height": 164
+      },
+      "chr_file": "sprite_21_heroic_90s_rocker_idle_1.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 22,
+      "type": "player",
+      "action": "idle",
+      "description": "heroic_90s_rocker_idle_2",
+      "frame": 22,
+      "bbox": {
+        "x": 906,
+        "y": 655,
+        "width": 113,
+        "height": 164
+      },
+      "chr_file": "sprite_22_heroic_90s_rocker_idle_2.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 23,
+      "type": "player",
+      "action": "idle",
+      "description": "heroic_90s_rocker_idle_3",
+      "frame": 23,
+      "bbox": {
+        "x": 20,
+        "y": 855,
+        "width": 81,
+        "height": 164
+      },
+      "chr_file": "sprite_23_heroic_90s_rocker_idle_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 24,
+      "type": "player",
+      "action": "idle",
+      "description": "heroic_90s_rocker_idle_4",
+      "frame": 24,
+      "bbox": {
+        "x": 147,
+        "y": 855,
+        "width": 82,
+        "height": 164
+      },
+      "chr_file": "sprite_24_heroic_90s_rocker_idle_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 25,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_25",
+      "frame": 25,
+      "bbox": {
+        "x": 266,
+        "y": 839,
+        "width": 107,
+        "height": 165
+      },
+      "chr_file": "sprite_25_player_frame_25.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 26,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_26",
+      "frame": 26,
+      "bbox": {
+        "x": 409,
+        "y": 860,
+        "width": 92,
+        "height": 159
+      },
+      "chr_file": "sprite_26_player_frame_26.chr",
+      "chr_size": 256
+    }
+  ]
+}

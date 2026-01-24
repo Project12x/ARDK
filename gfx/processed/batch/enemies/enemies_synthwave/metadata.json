@@ -1,0 +1,40 @@
+{
+  "source": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\ai_output\\enemies_synthwave.png",
+  "target_size": 32,
+  "global_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "frames": [
+    {
+      "frame": {
+        "id": 1,
+        "x": 0,
+        "y": 10,
+        "width": 1024,
+        "height": 1013,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\enemies\\enemies_synthwave\\sprite_01_unknown_unknown.chr",
+      "chr_size": 256,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    }
+  ],
+  "ai_analysis": null
+}

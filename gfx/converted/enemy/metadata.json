@@ -1,0 +1,37 @@
+{
+  "source": "gfx\\ai_output\\enemies_synthwave.png",
+  "timestamp": "2026-01-12T12:30:27.855553",
+  "platform": "NES",
+  "target_size": 32,
+  "colors_per_palette": 4,
+  "bits_per_pixel": 2,
+  "tile_format": ".chr",
+  "unified_palette": [
+    0,
+    15,
+    22,
+    37
+  ],
+  "palette_hex": "$00, $0F, $16, $25",
+  "ai_provider": "Pollinations",
+  "ai_failed": false,
+  "sprites_count": 0,
+  "tier": {
+    "tier": 0,
+    "tier_name": "MINIMAL",
+    "platform_id": "0x100",
+    "limits": {
+      "max_entities": 32,
+      "max_enemies": 12,
+      "max_projectiles": 16,
+      "max_pickups": 16,
+      "max_effects": 8,
+      "max_sprites_total": 64,
+      "max_sprites_per_line": 8
+    }
+  },
+  "tier_warnings": [
+    "32x32 metasprite uses 16 tiles per line, hardware limit is 8"
+  ],
+  "sprites": []
+}

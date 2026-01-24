@@ -1,0 +1,121 @@
+{
+  "source": "gfx/ai_output/player_hero_master_sheet.png",
+  "timestamp": "2026-01-10T19:12:45.834281",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 7,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "heroic_90s_rocker_idle",
+      "frame": 1,
+      "bbox": {
+        "x": 40,
+        "y": 26,
+        "width": 158,
+        "height": 29
+      },
+      "chr_file": "sprite_01_heroic_90s_rocker_idle.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "run",
+      "description": "heroic_90s_rocker_run",
+      "frame": 2,
+      "bbox": {
+        "x": 217,
+        "y": 26,
+        "width": 75,
+        "height": 29
+      },
+      "chr_file": "sprite_02_heroic_90s_rocker_run.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "jump",
+      "description": "heroic_90s_rocker_jump",
+      "frame": 3,
+      "bbox": {
+        "x": 311,
+        "y": 26,
+        "width": 165,
+        "height": 29
+      },
+      "chr_file": "sprite_03_heroic_90s_rocker_jump.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 4,
+      "type": "player",
+      "action": "victory",
+      "description": "heroic_90s_rocker_victory",
+      "frame": 4,
+      "bbox": {
+        "x": 531,
+        "y": 26,
+        "width": 167,
+        "height": 29
+      },
+      "chr_file": "sprite_04_heroic_90s_rocker_victory.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 5,
+      "type": "player",
+      "action": "damage",
+      "description": "heroic_90s_rocker_damage",
+      "frame": 5,
+      "bbox": {
+        "x": 717,
+        "y": 26,
+        "width": 168,
+        "height": 29
+      },
+      "chr_file": "sprite_05_heroic_90s_rocker_damage.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 6,
+      "type": "player",
+      "action": "run",
+      "description": "heroic_90s_rocker_run_loop",
+      "frame": 6,
+      "bbox": {
+        "x": 903,
+        "y": 26,
+        "width": 79,
+        "height": 29
+      },
+      "chr_file": "sprite_06_heroic_90s_rocker_run_loop.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 7,
+      "type": "player",
+      "action": "run",
+      "description": "heroic_90s_rocker_run_loop",
+      "frame": 7,
+      "bbox": {
+        "x": 0,
+        "y": 82,
+        "width": 1024,
+        "height": 941
+      },
+      "chr_file": "sprite_07_heroic_90s_rocker_run_loop.chr",
+      "chr_size": 256
+    }
+  ]
+}
