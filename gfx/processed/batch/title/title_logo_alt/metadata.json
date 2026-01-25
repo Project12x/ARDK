@@ -1,0 +1,148 @@
+{
+  "source": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\ai_output\\title_logo_alt.png",
+  "target_size": 64,
+  "global_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "frames": [
+    {
+      "frame": {
+        "id": 1,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 517,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\title\\title_logo_alt\\sprite_01_unknown_unknown.chr",
+      "chr_size": 1024,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 2,
+        "x": 0,
+        "y": 558,
+        "width": 1024,
+        "height": 383,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\title\\title_logo_alt\\sprite_02_unknown_unknown.chr",
+      "chr_size": 1024,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 3,
+        "x": 256,
+        "y": 972,
+        "width": 35,
+        "height": 37,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\title\\title_logo_alt\\sprite_03_unknown_unknown.chr",
+      "chr_size": 1024,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 4,
+        "x": 322,
+        "y": 972,
+        "width": 122,
+        "height": 33,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\title\\title_logo_alt\\sprite_04_unknown_unknown.chr",
+      "chr_size": 1024,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 5,
+        "x": 480,
+        "y": 972,
+        "width": 286,
+        "height": 33,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\title\\title_logo_alt\\sprite_05_unknown_unknown.chr",
+      "chr_size": 1024,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    }
+  ],
+  "ai_analysis": null
+}

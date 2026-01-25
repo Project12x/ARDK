@@ -1,0 +1,202 @@
+{
+  "source": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\ai_output\\items_projectiles.png",
+  "target_size": 16,
+  "global_palette": [
+    15,
+    36,
+    44,
+    32
+  ],
+  "frames": [
+    {
+      "frame": {
+        "id": 1,
+        "x": 36,
+        "y": 30,
+        "width": 951,
+        "height": 298,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          35,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_01_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        35,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 2,
+        "x": 35,
+        "y": 368,
+        "width": 532,
+        "height": 219,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          37,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_02_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        37,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 3,
+        "x": 35,
+        "y": 624,
+        "width": 379,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_03_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 4,
+        "x": 455,
+        "y": 624,
+        "width": 154,
+        "height": 36,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_04_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        36,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 5,
+        "x": 36,
+        "y": 679,
+        "width": 306,
+        "height": 305,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 0,
+        "palette": [
+          15,
+          37,
+          44,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_05_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        37,
+        44,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 6,
+        "x": 358,
+        "y": 679,
+        "width": 307,
+        "height": 305,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 1,
+        "palette": [
+          15,
+          36,
+          33,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_06_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        36,
+        33,
+        48
+      ]
+    },
+    {
+      "frame": {
+        "id": 7,
+        "x": 680,
+        "y": 679,
+        "width": 306,
+        "height": 305,
+        "sprite_type": "unknown",
+        "action": "unknown",
+        "description": "",
+        "frame_index": 2,
+        "palette": [
+          15,
+          36,
+          43,
+          48
+        ]
+      },
+      "chr_path": "C:\\Users\\estee\\Desktop\\My Stuff\\Code\\Antigravity\\SurvivorNES\\gfx\\processed\\batch\\items\\items_projectiles\\sprite_07_unknown_unknown.chr",
+      "chr_size": 64,
+      "palette": [
+        15,
+        36,
+        43,
+        48
+      ]
+    }
+  ],
+  "ai_analysis": null
+}

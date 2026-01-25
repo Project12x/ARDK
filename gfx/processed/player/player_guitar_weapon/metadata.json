@@ -1,0 +1,211 @@
+{
+  "source": "gfx/ai_output/player_guitar_weapon.png",
+  "timestamp": "2026-01-10T19:12:25.437078",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 13,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle",
+      "frame": 1,
+      "bbox": {
+        "x": 20,
+        "y": 19,
+        "width": 59,
+        "height": 22
+      },
+      "chr_file": "sprite_01_synthwave_hero_idle.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle",
+      "frame": 2,
+      "bbox": {
+        "x": 94,
+        "y": 19,
+        "width": 118,
+        "height": 22
+      },
+      "chr_file": "sprite_02_synthwave_hero_idle.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "run",
+      "description": "synthwave_hero_run",
+      "frame": 3,
+      "bbox": {
+        "x": 228,
+        "y": 19,
+        "width": 99,
+        "height": 22
+      },
+      "chr_file": "sprite_03_synthwave_hero_run.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 4,
+      "type": "player",
+      "action": "run",
+      "description": "synthwave_hero_run",
+      "frame": 4,
+      "bbox": {
+        "x": 370,
+        "y": 19,
+        "width": 96,
+        "height": 22
+      },
+      "chr_file": "sprite_04_synthwave_hero_run.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 5,
+      "type": "player",
+      "action": "run",
+      "description": "synthwave_hero_run",
+      "frame": 5,
+      "bbox": {
+        "x": 481,
+        "y": 19,
+        "width": 118,
+        "height": 22
+      },
+      "chr_file": "sprite_05_synthwave_hero_run.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 6,
+      "type": "player",
+      "action": "jump",
+      "description": "synthwave_hero_jump",
+      "frame": 6,
+      "bbox": {
+        "x": 615,
+        "y": 19,
+        "width": 58,
+        "height": 22
+      },
+      "chr_file": "sprite_06_synthwave_hero_jump.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 7,
+      "type": "player",
+      "action": "jump",
+      "description": "synthwave_hero_jump",
+      "frame": 7,
+      "bbox": {
+        "x": 689,
+        "y": 19,
+        "width": 95,
+        "height": 22
+      },
+      "chr_file": "sprite_07_synthwave_hero_jump.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 8,
+      "type": "player",
+      "action": "attack",
+      "description": "synthwave_hero_attack",
+      "frame": 8,
+      "bbox": {
+        "x": 828,
+        "y": 19,
+        "width": 58,
+        "height": 22
+      },
+      "chr_file": "sprite_08_synthwave_hero_attack.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 9,
+      "type": "player",
+      "action": "attack",
+      "description": "synthwave_hero_attack",
+      "frame": 9,
+      "bbox": {
+        "x": 902,
+        "y": 19,
+        "width": 99,
+        "height": 22
+      },
+      "chr_file": "sprite_09_synthwave_hero_attack.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 10,
+      "type": "background",
+      "action": "",
+      "description": "player_frame_10",
+      "frame": 10,
+      "bbox": {
+        "x": 31,
+        "y": 73,
+        "width": 959,
+        "height": 199
+      },
+      "chr_file": "sprite_10_player_frame_10.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 11,
+      "type": "background",
+      "action": "",
+      "description": "player_frame_11",
+      "frame": 11,
+      "bbox": {
+        "x": 29,
+        "y": 302,
+        "width": 961,
+        "height": 207
+      },
+      "chr_file": "sprite_11_player_frame_11.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 12,
+      "type": "background",
+      "action": "",
+      "description": "player_frame_12",
+      "frame": 12,
+      "bbox": {
+        "x": 30,
+        "y": 537,
+        "width": 960,
+        "height": 214
+      },
+      "chr_file": "sprite_12_player_frame_12.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 13,
+      "type": "background",
+      "action": "",
+      "description": "player_frame_13",
+      "frame": 13,
+      "bbox": {
+        "x": 30,
+        "y": 780,
+        "width": 960,
+        "height": 213
+      },
+      "chr_file": "sprite_13_player_frame_13.chr",
+      "chr_size": 256
+    }
+  ]
+}

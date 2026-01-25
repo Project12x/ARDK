@@ -1,0 +1,50 @@
+{
+  "source": "gfx/ai_output/boss_mainframe.png",
+  "timestamp": "2026-01-10T12:39:44.893926",
+  "target_size": 64,
+  "sprites_detected": 2,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "boss",
+      "action": "frame",
+      "frame": 1,
+      "description": "boss frame 1",
+      "bbox": {
+        "x": 122,
+        "y": 76,
+        "width": 780,
+        "height": 774
+      },
+      "palette": [
+        15,
+        44,
+        36,
+        48
+      ],
+      "chr_file": "sprite_01_boss_frame_1.chr",
+      "chr_size": 1024
+    },
+    {
+      "id": 2,
+      "type": "boss",
+      "action": "frame",
+      "frame": 2,
+      "description": "boss frame 2",
+      "bbox": {
+        "x": 112,
+        "y": 884,
+        "width": 804,
+        "height": 109
+      },
+      "palette": [
+        15,
+        48,
+        36,
+        44
+      ],
+      "chr_file": "sprite_02_boss_frame_2.chr",
+      "chr_size": 1024
+    }
+  ]
+}

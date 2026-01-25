@@ -1,0 +1,159 @@
+{
+  "generated": "2026-01-10",
+  "palette": "$0F, $24, $2C, $30",
+  "categories": {
+    "background": {
+      "assets": [
+        {
+          "name": "background_alt_ruins",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        },
+        {
+          "name": "background_cyberpunk",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        }
+      ]
+    },
+    "boss": {
+      "assets": [
+        {
+          "name": "boss_mainframe",
+          "sprites": 2,
+          "ai_provider": "unknown",
+          "chr_files": 2
+        }
+      ]
+    },
+    "enemies": {
+      "assets": [
+        {
+          "name": "enemies_alt_glitch",
+          "sprites": 25,
+          "ai_provider": "unknown",
+          "chr_files": 25
+        },
+        {
+          "name": "enemies_synthwave",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        }
+      ]
+    },
+    "items": {
+      "assets": [
+        {
+          "name": "items_projectiles",
+          "sprites": 7,
+          "ai_provider": "unknown",
+          "chr_files": 7
+        }
+      ]
+    },
+    "player": {
+      "assets": [
+        {
+          "name": "player_alt_radical",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        },
+        {
+          "name": "player_guitar_weapon",
+          "sprites": 13,
+          "ai_provider": "unknown",
+          "chr_files": 13
+        },
+        {
+          "name": "player_hair_dude",
+          "sprites": 19,
+          "ai_provider": "unknown",
+          "chr_files": 19
+        },
+        {
+          "name": "player_hair_weapon",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        },
+        {
+          "name": "player_hero_combat",
+          "sprites": 14,
+          "ai_provider": "unknown",
+          "chr_files": 14
+        },
+        {
+          "name": "player_hero_guitar",
+          "sprites": 25,
+          "ai_provider": "unknown",
+          "chr_files": 25
+        },
+        {
+          "name": "player_hero_idle_run",
+          "sprites": 9,
+          "ai_provider": "unknown",
+          "chr_files": 9
+        },
+        {
+          "name": "player_hero_master_sheet",
+          "sprites": 7,
+          "ai_provider": "unknown",
+          "chr_files": 7
+        },
+        {
+          "name": "player_rad_90s",
+          "sprites": 17,
+          "ai_provider": "unknown",
+          "chr_files": 17
+        }
+      ]
+    },
+    "title": {
+      "assets": [
+        {
+          "name": "logo_dev_walrus",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        },
+        {
+          "name": "title_logo",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        },
+        {
+          "name": "title_logo_alt",
+          "sprites": 5,
+          "ai_provider": "unknown",
+          "chr_files": 5
+        }
+      ]
+    },
+    "ui": {
+      "assets": [
+        {
+          "name": "ui_hud_font",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        }
+      ]
+    },
+    "vfx": {
+      "assets": [
+        {
+          "name": "vfx_explosion",
+          "sprites": 1,
+          "ai_provider": "unknown",
+          "chr_files": 1
+        }
+      ]
+    }
+  },
+  "total_sprites": 152
+}

@@ -1,0 +1,29 @@
+{
+  "source": "gfx/ai_output/logo_dev_walrus.png",
+  "timestamp": "2026-01-10T12:41:08.009702",
+  "target_size": 64,
+  "sprites_detected": 1,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "title",
+      "action": "frame",
+      "frame": 1,
+      "description": "title frame 1",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1023
+      },
+      "palette": [
+        15,
+        44,
+        44,
+        48
+      ],
+      "chr_file": "sprite_01_title_frame_1.chr",
+      "chr_size": 1024
+    }
+  ]
+}

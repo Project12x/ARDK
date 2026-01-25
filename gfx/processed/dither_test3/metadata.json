@@ -1,0 +1,52 @@
+{
+  "source": "gfx/ai_output/background_cyberpunk.png",
+  "timestamp": "2026-01-12T01:32:52.532962",
+  "platform": "NES",
+  "target_size": 32,
+  "colors_per_palette": 4,
+  "bits_per_pixel": 2,
+  "tile_format": ".chr",
+  "unified_palette": [
+    15,
+    4,
+    10,
+    0
+  ],
+  "palette_hex": "$0F, $04, $0A, $00",
+  "ai_provider": "Groq",
+  "sprites_count": 1,
+  "tier": {
+    "tier": 0,
+    "tier_name": "MINIMAL",
+    "platform_id": "0x100",
+    "limits": {
+      "max_entities": 32,
+      "max_enemies": 12,
+      "max_projectiles": 16,
+      "max_pickups": 16,
+      "max_effects": 8,
+      "max_sprites_total": 64,
+      "max_sprites_per_line": 8
+    }
+  },
+  "tier_warnings": [
+    "32x32 metasprite uses 16 tiles per line, hardware limit is 8"
+  ],
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle",
+      "frame": 1,
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 983,
+        "height": 818
+      },
+      "tile_file": "sprite_01_synthwave_hero_idle.chr",
+      "tile_size": 256
+    }
+  ]
+}

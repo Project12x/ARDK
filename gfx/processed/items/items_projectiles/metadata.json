@@ -1,0 +1,121 @@
+{
+  "source": "gfx/ai_output/items_projectiles.png",
+  "timestamp": "2026-01-10T19:12:10.020849",
+  "target_size": 16,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 7,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "items",
+      "action": "frame",
+      "description": "items_frame_1",
+      "frame": 1,
+      "bbox": {
+        "x": 36,
+        "y": 30,
+        "width": 951,
+        "height": 298
+      },
+      "chr_file": "sprite_01_items_frame_1.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 2,
+      "type": "item",
+      "action": "",
+      "description": "floppy_disk",
+      "frame": 2,
+      "bbox": {
+        "x": 35,
+        "y": 368,
+        "width": 532,
+        "height": 219
+      },
+      "chr_file": "sprite_02_floppy_disk.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 3,
+      "type": "item",
+      "action": "",
+      "description": "cassette_tape",
+      "frame": 3,
+      "bbox": {
+        "x": 35,
+        "y": 624,
+        "width": 379,
+        "height": 36
+      },
+      "chr_file": "sprite_03_cassette_tape.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 4,
+      "type": "item",
+      "action": "",
+      "description": "crystal",
+      "frame": 4,
+      "bbox": {
+        "x": 455,
+        "y": 624,
+        "width": 154,
+        "height": 36
+      },
+      "chr_file": "sprite_04_crystal.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 5,
+      "type": "item",
+      "action": "",
+      "description": "pizza_slice",
+      "frame": 5,
+      "bbox": {
+        "x": 36,
+        "y": 679,
+        "width": 306,
+        "height": 305
+      },
+      "chr_file": "sprite_05_pizza_slice.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 6,
+      "type": "projectile",
+      "action": "",
+      "description": "laser_beam_8x8",
+      "frame": 6,
+      "bbox": {
+        "x": 358,
+        "y": 679,
+        "width": 307,
+        "height": 305
+      },
+      "chr_file": "sprite_06_laser_beam_8x8.chr",
+      "chr_size": 64
+    },
+    {
+      "id": 7,
+      "type": "projectile",
+      "action": "",
+      "description": "swirl_8x8",
+      "frame": 7,
+      "bbox": {
+        "x": 680,
+        "y": 679,
+        "width": 306,
+        "height": 305
+      },
+      "chr_file": "sprite_07_swirl_8x8.chr",
+      "chr_size": 64
+    }
+  ]
+}

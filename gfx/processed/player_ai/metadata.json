@@ -1,0 +1,129 @@
+{
+  "source": "gfx/ai_output/player_rad_90s.png",
+  "analysis": {
+    "image_size": [
+      1024,
+      1024
+    ],
+    "sprites": [
+      {
+        "id": 1,
+        "bbox": [
+          40,
+          40,
+          292,
+          45
+        ],
+        "type": "player",
+        "description": "Player character idle animation frames, showing slight weight shifts.",
+        "action": "idle",
+        "size_16x16": true,
+        "frames": 6,
+        "colors": [
+          "#FF00FF",
+          "#00FFFF",
+          "#FFFFFF"
+        ]
+      },
+      {
+        "id": 2,
+        "bbox": [
+          40,
+          165,
+          200,
+          45
+        ],
+        "type": "player",
+        "description": "Player character running animation frames, depicting forward movement.",
+        "action": "running",
+        "size_16x16": true,
+        "frames": 4,
+        "colors": [
+          "#FF00FF",
+          "#00FFFF",
+          "#FFFFFF"
+        ]
+      },
+      {
+        "id": 3,
+        "bbox": [
+          40,
+          295,
+          140,
+          45
+        ],
+        "type": "player",
+        "description": "Player character shooting animation frames, including holding a weapon and an integrated projectile visual effect.",
+        "action": "shooting",
+        "size_16x16": true,
+        "frames": 2,
+        "colors": [
+          "#FF00FF",
+          "#00FFFF",
+          "#FFFFFF"
+        ]
+      }
+    ],
+    "notes": "The provided image dimensions (416x472 pixels) were used for bounding box calculations, as the prompt requested bounding boxes relative to 'this image size' despite also mentioning an 'image size: 1024x1024 pixels' earlier. The content appears to be a section of a larger potential sprite sheet. All character sprites are consistent in style and color palette, designed to be composed of multiple 8x8 NES sprites (hence 'size_16x16': true).",
+    "analysis_scale": 1.0
+  },
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "Player character idle animation frames, showing slight weight shifts.",
+      "chr_file": "gfx\\processed\\player_ai\\player\\idle\\player_character_idle_animation_frames_showing_slight_weight_shifts.chr",
+      "png_file": "gfx\\processed\\player_ai\\player\\idle\\player_character_idle_animation_frames_showing_slight_weight_shifts.png",
+      "size": [
+        304,
+        48
+      ],
+      "palette": [
+        15,
+        28,
+        15,
+        36
+      ],
+      "tile_count": 228
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "running",
+      "description": "Player character running animation frames, depicting forward movement.",
+      "chr_file": "gfx\\processed\\player_ai\\player\\running\\player_character_running_animation_frames_depicting_forward_movement.chr",
+      "png_file": "gfx\\processed\\player_ai\\player\\running\\player_character_running_animation_frames_depicting_forward_movement.png",
+      "size": [
+        208,
+        48
+      ],
+      "palette": [
+        15,
+        28,
+        15,
+        36
+      ],
+      "tile_count": 156
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "shooting",
+      "description": "Player character shooting animation frames, including holding a weapon and an integrated projectile visual effect.",
+      "chr_file": "gfx\\processed\\player_ai\\player\\shooting\\player_character_shooting_animation_frames_including_holding_a_weapon_and_an_integrated_projectile_visual_effect.chr",
+      "png_file": "gfx\\processed\\player_ai\\player\\shooting\\player_character_shooting_animation_frames_including_holding_a_weapon_and_an_integrated_projectile_visual_effect.png",
+      "size": [
+        144,
+        48
+      ],
+      "palette": [
+        15,
+        28,
+        0,
+        28
+      ],
+      "tile_count": 108
+    }
+  ]
+}

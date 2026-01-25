@@ -1,0 +1,29 @@
+{
+  "source": "gfx/ai_output/ui_hud_font.png",
+  "timestamp": "2026-01-10T12:42:10.468192",
+  "target_size": 8,
+  "sprites_detected": 1,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "ui",
+      "action": "frame",
+      "frame": 1,
+      "description": "ui frame 1",
+      "bbox": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1023
+      },
+      "palette": [
+        15,
+        36,
+        44,
+        36
+      ],
+      "chr_file": "sprite_01_ui_frame_1.chr",
+      "chr_size": 16
+    }
+  ]
+}

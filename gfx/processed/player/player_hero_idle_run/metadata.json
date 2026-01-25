@@ -1,0 +1,151 @@
+{
+  "source": "gfx/ai_output/player_hero_idle_run.png",
+  "timestamp": "2026-01-10T19:12:42.975434",
+  "target_size": 32,
+  "unified_palette": [
+    15,
+    36,
+    44,
+    48
+  ],
+  "palette_hex": "$0F, $24, $2C, $30",
+  "ai_provider": "Groq",
+  "sprites_count": 9,
+  "sprites": [
+    {
+      "id": 1,
+      "type": "player",
+      "action": "idle",
+      "description": "synthwave_hero_idle",
+      "frame": 1,
+      "bbox": {
+        "x": 168,
+        "y": 37,
+        "width": 244,
+        "height": 36
+      },
+      "chr_file": "sprite_01_synthwave_hero_idle.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 2,
+      "type": "player",
+      "action": "run",
+      "description": "synthwave_hero_run",
+      "frame": 2,
+      "bbox": {
+        "x": 450,
+        "y": 37,
+        "width": 117,
+        "height": 36
+      },
+      "chr_file": "sprite_02_synthwave_hero_run.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 3,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_3",
+      "frame": 3,
+      "bbox": {
+        "x": 604,
+        "y": 37,
+        "width": 245,
+        "height": 36
+      },
+      "chr_file": "sprite_03_player_frame_3.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 4,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_4",
+      "frame": 4,
+      "bbox": {
+        "x": 112,
+        "y": 153,
+        "width": 236,
+        "height": 359
+      },
+      "chr_file": "sprite_04_player_frame_4.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 5,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_5",
+      "frame": 5,
+      "bbox": {
+        "x": 420,
+        "y": 107,
+        "width": 235,
+        "height": 405
+      },
+      "chr_file": "sprite_05_player_frame_5.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 6,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_6",
+      "frame": 6,
+      "bbox": {
+        "x": 711,
+        "y": 153,
+        "width": 236,
+        "height": 359
+      },
+      "chr_file": "sprite_06_player_frame_6.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 7,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_7",
+      "frame": 7,
+      "bbox": {
+        "x": 460,
+        "y": 552,
+        "width": 102,
+        "height": 31
+      },
+      "chr_file": "sprite_07_player_frame_7.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 8,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_8",
+      "frame": 8,
+      "bbox": {
+        "x": 35,
+        "y": 604,
+        "width": 492,
+        "height": 363
+      },
+      "chr_file": "sprite_08_player_frame_8.chr",
+      "chr_size": 256
+    },
+    {
+      "id": 9,
+      "type": "player",
+      "action": "frame",
+      "description": "player_frame_9",
+      "frame": 9,
+      "bbox": {
+        "x": 542,
+        "y": 604,
+        "width": 451,
+        "height": 363
+      },
+      "chr_file": "sprite_09_player_frame_9.chr",
+      "chr_size": 256
+    }
+  ]
+}
