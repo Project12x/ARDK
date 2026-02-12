@@ -109,4 +109,31 @@
 #define INVULN_FRAMES 60      // 1 second of invincibility after hit
 #define DASH_INVULN_FRAMES 10 // i-frames during dash
 
+// =============================================================================
+// UPGRADE SHOP (Tower-Based)
+// =============================================================================
+#define TOWER_INTERACT_RANGE 48  // Pixels from tower center to open shop
+
+// Upgrade costs (XP)
+#define UPGRADE_COST_FIRE_RATE  50
+#define UPGRADE_COST_DAMAGE     75
+#define UPGRADE_COST_SPREAD    150
+#define UPGRADE_COST_FENRIR    100
+#define UPGRADE_COST_MAGNET     60
+
+// Max upgrade levels
+#define UPGRADE_MAX_FIRE_RATE   5
+#define UPGRADE_MAX_DAMAGE      4
+#define UPGRADE_MAX_SPREAD      1
+#define UPGRADE_MAX_FENRIR      1
+#define UPGRADE_MAX_MAGNET      3
+
+// Upgrade type indices
+#define UPGRADE_FIRE_RATE  0
+#define UPGRADE_DAMAGE     1
+#define UPGRADE_SPREAD     2
+#define UPGRADE_FENRIR     3
+#define UPGRADE_MAGNET     4
+#define UPGRADE_COUNT      5
+
 #endif // _CONSTANTS_H_

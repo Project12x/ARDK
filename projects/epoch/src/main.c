@@ -18,6 +18,7 @@
 #include "game/pickups.h"
 #include "game/projectiles.h"
 #include "ui/build_mode.h"
+#include "ui/upgrade_menu.h"
 #include <genesis.h>
 #include <string.h>
 
@@ -688,12 +689,29 @@ static void hud_update(void) {
 // GAME STATE
 // =============================================================================
 void game_init(void) {
+  // Release player/tower sprites before re-init (prevents ghost sprites on restart)
+  if (playerSprite) {
+    SPR_releaseSprite(playerSprite);
+    playerSprite = NULL;
+  }
+  if (towerSprite) {
+    SPR_releaseSprite(towerSprite);
+    towerSprite = NULL;
+  }
+
   audio_init();
   // Init modules
   entity_initPool();
   enemies_init();
   projectiles_init();
   fenrir_init();
+
+  // Reset sprite caches (force full update on new sprites)
+  playerPosXCache = -999;
+  playerPosYCache = -999;
+  playerFrameCache = 0xFF;
+  playerFlipCache = 0xFF;
+  playerVisCache = 0xFF;
 
   // Reset HUD Caching
   lastScore = 0xFFFFFFFF;
@@ -760,6 +778,36 @@ void game_init(void) {
 }
 
 static void update_siege(void) {
+  // =========================================================================
+  // UPGRADE MENU - Pauses gameplay
+  // =========================================================================
+  if (upgrade_menu_isOpen()) {
+    upgrade_menu_update();
+    return; // Skip rest of update while menu is open
+  }
+
+  // Check for tower proximity + C button to open upgrade menu
+  Entity *player = entity_getPlayer();
+  if (player->flags & ENT_ACTIVE) {
+    s16 px = FP_INT(player->x);
+    s16 py = FP_INT(player->y);
+    s16 dx = px - TOWER_X;
+    s16 dy = py - TOWER_Y;
+    if (dx < 0)
+      dx = -dx;
+    if (dy < 0)
+      dy = -dy;
+
+    // Within tower range + C pressed = open menu
+    if ((dx + dy) < TOWER_INTERACT_RANGE && input_justPressed(BUTTON_C)) {
+      upgrade_menu_open();
+      return;
+    }
+  }
+
+  // =========================================================================
+  // NORMAL SIEGE LOGIC
+  // =========================================================================
   if (game.siegeTimer > 0) {
     game.siegeTimer--;
     if (game.siegeTimer == 0) {
@@ -825,7 +873,7 @@ static void update_siege(void) {
         break;
       }
       projectile_spawn(FP_INT(player->x), FP_INT(player->y), dx, dy);
-      fireCooldown = playerData.fireRate;
+      fireCooldown = upgrade_getFireRate(); // Uses upgrade level
     }
   }
 
@@ -857,7 +905,7 @@ static void update_siege(void) {
   PROF_PICKUPS_END();
 
   // Check pickup collisions (player touching pickups)
-  Entity *player = entity_getPlayer();
+  // 'player' already retrieved for tower proximity check above
   if (player->flags & ENT_ACTIVE) {
     // Pickup collection handled in pickups_update()
 
@@ -1006,25 +1054,42 @@ void game_update(void) {
   case STATE_LEVELUP:
     break;
 
-  case STATE_GAMEOVER:
-    // Draw Game Over screen
-    VDP_drawText("================", 12, 10);
-    VDP_drawText("   GAME  OVER   ", 12, 12);
-    VDP_drawText("================", 12, 14);
+  case STATE_GAMEOVER: {
+    // Draw game over screen ONCE (cached)
+    static bool gameOverDrawn = FALSE;
+    if (!gameOverDrawn) {
+      // Expand window to full screen so text is fixed on screen
+      VDP_setWindowVPos(FALSE, 28);
 
-    // Show final score
-    sprintf(scoreStr, "SCORE: %lu", game.score);
-    VDP_drawText(scoreStr, 14, 16);
-    sprintf(scoreStr, "WAVE: %u", director.waveNumber);
-    VDP_drawText(scoreStr, 15, 17);
+      // Draw Game Over screen on WINDOW plane (screen-fixed)
+      VDP_drawTextEx(WINDOW, "================",
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 12, 10, CPU);
+      VDP_drawTextEx(WINDOW, "   GAME  OVER   ",
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 12, 12, CPU);
+      VDP_drawTextEx(WINDOW, "================",
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 12, 14, CPU);
 
-    VDP_drawText("PRESS START", 14, 20);
+      // Show final score
+      sprintf(scoreStr, "SCORE: %lu", game.score);
+      VDP_drawTextEx(WINDOW, scoreStr,
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 14, 16, CPU);
+      sprintf(scoreStr, "WAVE: %u", director.waveNumber);
+      VDP_drawTextEx(WINDOW, scoreStr,
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 15, 17, CPU);
+
+      VDP_drawTextEx(WINDOW, "PRESS START",
+                     TILE_ATTR_FULL(PAL0, TRUE, FALSE, FALSE, 0), 14, 20, CPU);
+      gameOverDrawn = TRUE;
+    }
 
     if (input_justPressed(BUTTON_START)) {
-      VDP_clearPlane(BG_A, TRUE); // Clear text
-      game.state = STATE_TITLE;   // Go back to title first
+      VDP_clearPlane(WINDOW, TRUE);      // Clear game over text
+      VDP_setWindowVPos(FALSE, 4);       // Restore HUD-only window
+      gameOverDrawn = FALSE;
+      game.state = STATE_TITLE;
     }
     break;
+  }
   }
 
   // End frame profiling (flushes to SRAM periodically)
@@ -1075,6 +1140,7 @@ static void epoch_init(void) {
   // Init Sprites - FULL GAME RESTORED
   SPR_init();
   game_init();
+  upgrade_menu_init(); // Initialize upgrade shop system
   enemy_spawn_at(entity_getPlayer()->x + FP(60), entity_getPlayer()->y);
 
   // H-Int raster wavy effect - DISABLED (causes slowdown due to 224 iter/frame)
