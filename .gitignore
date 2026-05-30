@@ -5,13 +5,10 @@
 # =====================
 # EXCLUDE LARGE/TEMP FOLDERS
 # =====================
-_deprecated/
-artifacts/
 .pixellab_cache/
 .claude/
 
 # Build outputs
-projects/*/out/
 *.bin
 *.o
 *.elf
