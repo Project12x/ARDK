@@ -58,10 +58,21 @@ def test_match_palette_extraction():
           "match-palette extracts used colours, skipping index 0")
 
 
+def test_far_color_no_overflow():
+    # Dark pixel; palette has a near-dark and a far-bright colour. The squared
+    # distance must not overflow: int16 wraps 235**2 (=55225) negative and would
+    # mis-map the dark pixel onto the far-bright colour.
+    arr = np.array([[[20, 20, 20, 255]]], dtype=np.uint8)
+    out = convert_image(Image.fromarray(arr), palette=[(30, 30, 30), (255, 230, 0)])
+    check(int(np.asarray(out)[0, 0]) == 1,
+          "dark pixel maps to near-dark (idx1), not far-bright")
+
+
 def main():
     test_basic_indexing()
     test_color_cap()
     test_match_palette_extraction()
+    test_far_color_no_overflow()
     print(f"premade_to_sgdk: {_run - _fail}/{_run} checks passed")
     sys.exit(1 if _fail else 0)
 

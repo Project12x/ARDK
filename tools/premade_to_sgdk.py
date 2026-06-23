@@ -78,8 +78,10 @@ def convert_image(img, max_colors=15, palette=None):
 
     out = np.zeros((h, w), dtype=np.uint8)  # default 0 == transparent
     if palette:
-        pal = np.array(palette, dtype=np.int16)            # K,3
-        px = rgb[opaque].astype(np.int16)                  # N,3
+        # int32, not int16: a single channel delta can be 255, and 255**2 = 65025
+        # overflows int16 (wraps negative), which mis-maps far colours as "nearest".
+        pal = np.array(palette, dtype=np.int32)            # K,3
+        px = rgb[opaque].astype(np.int32)                  # N,3
         dist = ((px[:, None, :] - pal[None, :, :]) ** 2).sum(axis=2)  # N,K
         out[opaque] = (dist.argmin(axis=1) + 1).astype(np.uint8)      # 1..K
 
