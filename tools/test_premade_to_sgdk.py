@@ -44,9 +44,24 @@ def test_color_cap():
     check(int(idx.max()) <= 15, "quantised to <=15 colour indices")
 
 
+def test_match_palette_extraction():
+    import os
+    import tempfile
+    from tools.premade_to_sgdk import palette_from_indexed_png
+    idx = np.array([[0, 1, 2, 1]], dtype=np.uint8)  # index 0 = transparent
+    im = Image.frombytes("P", (4, 1), idx.tobytes())
+    im.putpalette([255, 0, 255, 10, 20, 30, 40, 50, 60] + [0] * (768 - 9))
+    p = os.path.join(tempfile.gettempdir(), "_premade_pal_test.png")
+    im.save(p)
+    cols = palette_from_indexed_png(p)
+    check(cols == [(10, 20, 30), (40, 50, 60)],
+          "match-palette extracts used colours, skipping index 0")
+
+
 def main():
     test_basic_indexing()
     test_color_cap()
+    test_match_palette_extraction()
     print(f"premade_to_sgdk: {_run - _fail}/{_run} checks passed")
     sys.exit(1 if _fail else 0)
 

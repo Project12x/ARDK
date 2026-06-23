@@ -99,6 +99,18 @@ def res_lines(sprite_name, png_rel, frame_tiles_w, frame_tiles_h, palette_name):
             f'PALETTE {palette_name} "{png_rel}"')
 
 
+def palette_from_indexed_png(path):
+    """Used (index>0) RGB colours from an already-indexed PNG, so a set of sprites
+    can reuse a known-good palette instead of a fresh (lossy) merge."""
+    im = Image.open(path)
+    if im.mode != "P":
+        im = im.convert("P")
+    pal = im.getpalette() or []
+    used = [i for i in sorted(set(np.asarray(im).flatten().tolist())) if i != 0]
+    return [(pal[i * 3], pal[i * 3 + 1], pal[i * 3 + 2])
+            for i in used if i * 3 + 2 < len(pal)]
+
+
 def main(argv=None):
     import argparse
     ap = argparse.ArgumentParser(
@@ -108,6 +120,8 @@ def main(argv=None):
     ap.add_argument("--max-colors", type=int, default=15, help="Max colours (<=15)")
     ap.add_argument("--shared", action="store_true",
                     help="Quantise all inputs to ONE shared palette (4-CRAM budget)")
+    ap.add_argument("--match-palette",
+                    help="Reuse this indexed PNG's palette for all inputs (no merge)")
     ap.add_argument("--frame", default="2x2",
                     help="Frame size in TILES WxH for the .res SPRITE def "
                          "(2x2=16x16, 4x4=32x32)")
@@ -115,10 +129,15 @@ def main(argv=None):
 
     os.makedirs(args.outdir, exist_ok=True)
     fw, fh = (int(x) for x in args.frame.lower().split("x"))
-    pal = build_shared_palette([Image.open(p) for p in args.inputs],
-                               args.max_colors) if args.shared else None
-    if pal is not None:
+    if args.match_palette:
+        pal = palette_from_indexed_png(args.match_palette)
+        print(f"matched palette: {len(pal)} colours from {args.match_palette}")
+    elif args.shared:
+        pal = build_shared_palette([Image.open(p) for p in args.inputs],
+                                   args.max_colors)
         print(f"shared palette: {len(pal)} colours")
+    else:
+        pal = None
 
     res = []
     for src in args.inputs:
