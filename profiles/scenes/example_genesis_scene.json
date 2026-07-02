@@ -1,0 +1,44 @@
+{
+  "scene_id": "example_genesis_scene",
+  "display_name": "Example Genesis Combat Scene",
+  "target_system": "genesis",
+  "scene_type": "combat",
+  "assets": [
+    {
+      "asset_id": "hero",
+      "path": "../../tools/epoch_hero_sprite.png",
+      "role": "player",
+      "layer": "sprites",
+      "palette_role": "PAL1",
+      "max_simultaneous": 1,
+      "tags": ["hero", "readability_anchor"]
+    },
+    {
+      "asset_id": "enemy_sample",
+      "path": "../../tools/sdk_test_sprite.png",
+      "role": "enemies",
+      "layer": "sprites",
+      "palette_role": "PAL2",
+      "max_simultaneous": 4,
+      "tags": ["enemy", "palette_pressure_probe"]
+    },
+    {
+      "asset_id": "fx_sample",
+      "path": "../../tools/pixellab_test_v1.png",
+      "role": "fx",
+      "layer": "sprites",
+      "palette_role": "PAL3",
+      "max_simultaneous": 2,
+      "tags": ["fx", "accent_color_probe"]
+    }
+  ],
+  "notes": [
+    "This manifest exists to prove visible-together role-aware analysis.",
+    "It is a sample scene, not a final art direction for a shipped game."
+  ],
+  "metadata": {
+    "camera_width": 320,
+    "camera_height": 224,
+    "assume_worst_case_vertical_clustering": true
+  }
+}

@@ -22,11 +22,21 @@ Modules:
     processing        - Core image processing
     ai                - AI provider integration
     style             - Style transfer system
+    art_profiles      - System capability + game art direction contracts
     fallback          - Fallback processing when AI unavailable
     quantization      - Perceptual color science and dithering (Phase 0.7-0.8)
     effects           - Sprite effects (hit flash, damage tint, etc.) (Phase 1.3)
     integrations      - External tool integrations (Aseprite) (Phase 1.8)
 """
+
+from .art_profiles import (
+    ArtProfileError,
+    SystemCapabilityProfile,
+    GameArtDirectionProfile,
+    ArtOptimizationContract,
+    load_art_optimization_contract,
+)
+
 
 # Animation module (Phase 1.1)
 from .animation import (

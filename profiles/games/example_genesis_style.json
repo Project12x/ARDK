@@ -1,0 +1,154 @@
+{
+  "profile_version": 1,
+  "game_id": "example_genesis_style",
+  "display_name": "Example Genesis Art Direction",
+  "target_system": "genesis",
+  "mood": [
+    "neon industrial",
+    "readable action",
+    "saturated but disciplined",
+    "1990s arcade console energy"
+  ],
+  "references": [
+    "Streets of Rage 2: bold nighttime color separation",
+    "Castlevania Bloodlines: dramatic contrast and readable silhouettes",
+    "Alien Soldier: high-energy sprite color accents"
+  ],
+  "palette_language": {
+    "overall": {
+      "saturation": "high",
+      "contrast": "high",
+      "value_grouping": "clear",
+      "neutrals": "cool_dark"
+    },
+    "ramps": {
+      "preferred_steps": 4,
+      "protect_hue_identity": true,
+      "avoid_single_color_noise": true,
+      "allow_dithering_for_large_surfaces": true
+    },
+    "shared_colors": {
+      "black_outline": [0, 0, 0],
+      "common_white": [238, 238, 238],
+      "danger_accent": [238, 0, 68],
+      "energy_accent": [0, 204, 238]
+    }
+  },
+  "outline_rules": {
+    "default": "selective_black",
+    "player": "strong_dark_outer",
+    "enemies": "colored_or_dark_outer",
+    "backgrounds": "avoid_black_outlines",
+    "ui": "crisp_high_contrast"
+  },
+  "rendering_rules": {
+    "anti_aliasing": false,
+    "subpixel_detail": false,
+    "gradient_policy": "stepped_ramps_only",
+    "dithering": {
+      "allow": ["backgrounds", "large_metal_surfaces", "shadow_transitions"],
+      "avoid": ["faces", "tiny_sprites", "ui_text"]
+    },
+    "shadow_highlight_mode": {
+      "plan_for": true,
+      "protect_silhouettes": true,
+      "avoid_low_contrast_key_shapes": true
+    }
+  },
+  "asset_roles": {
+    "player": {
+      "priority": "highest",
+      "desired_palette": "PAL1",
+      "protect": ["silhouette", "skin_or_face_ramp", "main_costume_accent"]
+    },
+    "enemies": {
+      "desired_palette": "PAL2",
+      "allow_palette_sharing": true,
+      "protect": ["threat_accent", "readable_hit_flash"]
+    },
+    "world_background": {
+      "desired_palette": "PAL0",
+      "allow_dithering": true,
+      "lower_contrast_than_sprites": true
+    },
+    "ui": {
+      "desired_palette": "PAL3",
+      "protect": ["text_contrast", "health_and_warning_colors"]
+    },
+    "fx": {
+      "desired_palette": "PAL3",
+      "allow_palette_stealing_when_scene_safe": true
+    }
+  },
+  "scene_rules": {
+    "sprite_background_separation": "mandatory",
+    "maximum_active_palette_roles": {
+      "sprites": 2,
+      "backgrounds": 1,
+      "ui_fx": 1
+    },
+    "prefer_reused_palettes_over_unique_one_off_palettes": true,
+    "require_tradeoff_report_for": [
+      "merged_ramps",
+      "hue_shifts",
+      "lost_accents",
+      "palette_role_conflicts"
+    ]
+  },
+  "protected_colors": [
+    {
+      "name": "transparency",
+      "rgb": [255, 0, 255],
+      "role": "transparent_index_zero_source"
+    },
+    {
+      "name": "outline_black",
+      "rgb": [0, 0, 0],
+      "role": "silhouette_anchor"
+    },
+    {
+      "name": "energy_cyan",
+      "rgb": [0, 204, 238],
+      "role": "player_fx_accent"
+    }
+  ],
+  "protected_ramps": [
+    {
+      "name": "player_skin_or_face",
+      "role": "player_readability",
+      "minimum_steps": 3
+    },
+    {
+      "name": "enemy_warning_red",
+      "role": "threat_readability",
+      "minimum_steps": 3
+    },
+    {
+      "name": "background_purple_shadow",
+      "role": "mood",
+      "minimum_steps": 4
+    }
+  ],
+  "scoring_weights": {
+    "palette_fit": 1.0,
+    "ramp_preservation": 1.2,
+    "silhouette_contrast": 1.3,
+    "palette_reuse": 1.0,
+    "tile_reuse": 0.7,
+    "sprite_scanline_safety": 0.9,
+    "vram_pressure": 0.8,
+    "dma_pressure": 0.7,
+    "shadow_highlight_safety": 0.9
+  },
+  "export_preferences": {
+    "contact_sheet": true,
+    "error_heatmap": true,
+    "palette_usage_report": true,
+    "sgdk_resources": true,
+    "blastem_validation": true
+  },
+  "notes": [
+    "This file is intentionally game-specific.",
+    "A different Genesis game should replace this profile without editing profiles/systems/genesis.json."
+  ]
+}

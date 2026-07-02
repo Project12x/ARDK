@@ -1,0 +1,114 @@
+{
+  "profile_version": 1,
+  "system_id": "genesis",
+  "display_name": "Sega Genesis / Mega Drive",
+  "aliases": ["megadrive", "md", "sega_genesis"],
+  "resolution": {
+    "common_width": 320,
+    "common_height": 224,
+    "alternate_width": 256,
+    "pal_height": 240,
+    "tile_width": 8,
+    "tile_height": 8
+  },
+  "color": {
+    "master_colors": 512,
+    "channel_bits": 3,
+    "channel_step": 2,
+    "cram_format": "0x0BGR",
+    "sgdk_cram_word_order": "BGR"
+  },
+  "palettes": {
+    "count": 4,
+    "colors_per_palette": 16,
+    "usable_colors_per_palette": 15,
+    "total_cram_entries": 64,
+    "transparent_index": 0,
+    "transparent_applies_to": ["sprites", "planes"],
+    "conventional_transparency_rgb": [255, 0, 255]
+  },
+  "tiles": {
+    "tile_width": 8,
+    "tile_height": 8,
+    "bits_per_pixel": 4,
+    "bytes_per_tile": 32,
+    "max_unique_tiles": 2048,
+    "practical_art_tile_budget": 1600,
+    "supports_h_flip": true,
+    "supports_v_flip": true,
+    "optimize_with_flips": true
+  },
+  "sprites": {
+    "max_sprites": 80,
+    "sprites_per_scanline": 20,
+    "max_sprite_width": 32,
+    "max_sprite_height": 32,
+    "sprite_cell_width": 8,
+    "sprite_cell_height": 8,
+    "supports_priority": true,
+    "supports_h_flip": true,
+    "supports_v_flip": true,
+    "notes": [
+      "Large objects should be composed from 32x32-or-smaller hardware sprites.",
+      "Vertical distribution matters as much as total sprite count."
+    ]
+  },
+  "planes": {
+    "scroll_planes": ["BG_A", "BG_B"],
+    "fixed_planes": ["WINDOW"],
+    "plane_sizes_tiles": [[32, 32], [64, 32], [32, 64], [64, 64], [128, 32], [32, 128]],
+    "tile_attributes": ["palette", "priority", "h_flip", "v_flip", "tile_index"]
+  },
+  "transfer": {
+    "vram_kb": 64,
+    "ntsc_dma_budget_bytes_per_vblank": 7500,
+    "prefer_dma_queue": true,
+    "avoid_large_active_display_uploads": true
+  },
+  "audio": {
+    "sound_cpu": "Z80",
+    "fm_chip": "YM2612",
+    "psg_chip": "SN76489",
+    "sgdk_drivers": ["XGM", "XGM2"]
+  },
+  "toolchain": {
+    "primary": "SGDK",
+    "resource_compiler": "rescomp",
+    "resource_format": ".res",
+    "expected_environment_variables": ["GDK", "SGDK", "GENDEV"]
+  },
+  "validation": {
+    "primary_emulator": "BlastEm",
+    "emulator_capabilities": [
+      "boot_rom",
+      "gdb_remote",
+      "inspect_work_ram",
+      "inspect_vram",
+      "capture_screenshot"
+    ],
+    "secondary_emulators": ["Gens KMod", "Exodus", "ares"]
+  },
+  "optimization_defaults": {
+    "scoring_weights": {
+      "palette_fit": 1.0,
+      "ramp_preservation": 1.0,
+      "silhouette_contrast": 1.0,
+      "palette_reuse": 0.9,
+      "tile_reuse": 0.8,
+      "sprite_scanline_safety": 0.9,
+      "vram_pressure": 0.8,
+      "dma_pressure": 0.7,
+      "shadow_highlight_safety": 0.6
+    },
+    "preferred_palette_roles": {
+      "PAL0": "world_background",
+      "PAL1": "player_and_hero",
+      "PAL2": "enemies_and_npcs",
+      "PAL3": "ui_fx_and_specials"
+    }
+  },
+  "notes": [
+    "This profile describes Genesis capability, not a specific game's art style.",
+    "Game art direction should override taste, not hardware facts."
+  ]
+}
